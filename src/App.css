@@ -4,8 +4,12 @@
   grid-template-columns: 1fr 4fr 4fr 1fr;
   grid-template-areas: 
     'navbar navbar navbar navbar'
-    'media main main contact'
+    'media  main    main  contact'
+    'media  about   about  contact'
+    'media  project   project  contact'
   ;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
 }
 
@@ -19,19 +23,24 @@
 
 .app__socialMedia {
   grid-area: media;
-  position: sticky;
+  position: fixed;
   left: 0;
-  /* top: 50%; */
-
-  /* transform: translateY(-50%); */
 }
 
 .app__home {
   grid-area: main;
 }
 
+.app__about {
+  grid-area: about;
+}
+
+.app__project {
+  grid-area: project;
+}
+
 .app__contact {
   grid-area: contact;
-  position: sticky;
+  position: fixed;
   right: 0;
 }

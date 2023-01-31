@@ -1,0 +1,68 @@
+.app__home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.app__home__container--text {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.app__home__container--text h1 {
+  width: fit-content;
+  text-align: left;
+  margin-bottom: 1rem;
+  font-size: 42px;
+
+  color: var(--color-primary);
+
+  text-shadow: 0 0 48px #90DDF0,
+              0 0 52px #90DDF0
+      ;
+  animation: textGlow 2s infinite ease;
+}
+
+@keyframes textGlow {
+  0% {
+    text-shadow: 0 0 48px #90DDF0;
+  }
+  50% {
+    text-shadow: 0 0 48px #90DDF0,
+                0 0 52px #90DDF0,
+                0 0 62px #90DDF0,
+                0 0 72px #90DDF0
+;}
+  100% {
+  text-shadow: 0 0 48px #90DDF0;
+}
+}
+
+.app__home__container--text p {
+  text-align: right;
+  line-height: 32px;
+}
+
+.app__home__container--box {
+  width: 200px;
+  height: 150px;
+  background: var(--color-option);
+
+  position: absolute;
+  border-radius: 30px;
+}
+
+.app__home__container--box.first {
+  top: 20%;
+}
+
+.app__home__container--box.second {
+  right: 0;
+}

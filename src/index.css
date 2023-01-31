@@ -4,10 +4,16 @@
   --font-family: 'Source Code Pro';
   --color-bg: #0a090c;
   --color-text: #F0EDEE;
-  --color-primary: #07393C;
+  --color-primary: #90DDF0;
   --color-secondary: #2C666E;
-  --color-option: #90DDF0;
+  --color-option: #07393C;
 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 

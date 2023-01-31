@@ -10,8 +10,8 @@ const HomePage = () => {
         <div className="app__home__container--text">
           <h1>&#60;Hello, I'm Huan Zeng /&#62;</h1>
           <p>
-            a software engineer. I am passionate about using technology to solve
-            complex problems and create innovative solutions. /&#62;
+            &#60;a software engineer. I am passionate about using technology to
+            solve complex problems and create innovative solutions. /&#62;
           </p>
         </div>
         <div className="app__home__container--box second" />

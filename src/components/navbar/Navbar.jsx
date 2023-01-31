@@ -1,12 +1,7 @@
 import React from 'react'
 import './navbar.css'
 
-import {
-  RiMailSendLine,
-  RiGithubFill,
-  RiLinkedinBoxFill,
-  RiFolderOpenFill
-} from 'react-icons/ri'
+import { RiFolderOpenFill } from 'react-icons/ri'
 
 const Navbar = () => {
   return (
@@ -17,6 +12,9 @@ const Navbar = () => {
         </div>
       </div>
       <div className="app__navbar__content">
+        <p>About</p>
+        <p>Skills</p>
+        <p>Work</p>
         <RiFolderOpenFill className="app__navbar__content--icons" />
       </div>
     </div>

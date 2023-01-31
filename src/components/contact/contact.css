@@ -1,9 +1,15 @@
 .app__contact {
+
   display: flex;
   justify-content: flex-end;
+
 }
 
 .app__contact p {
+  width: 20px;
   white-space: nowrap;
-  transform: rotate(90deg);
+  transform: rotate(90deg) translateX(-50%);
+
+  position: absolute;
+  bottom:0;
 }
