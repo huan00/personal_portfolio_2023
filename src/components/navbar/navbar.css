@@ -1,0 +1,56 @@
+.app__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app__navbar__logo {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+.app__navbar__logo div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+
+  position: relative;
+}
+
+.app__navbar__logo div::before {
+  content: '';
+  width: 10px;
+  aspect-ratio: 1 / 1;
+
+  background-color: var(--color-option);
+  border-radius: 50%;
+  box-shadow: 0 0 10px #90ddf080,
+              0 0 20px #90d2e680,
+              0 0 30px #90c8e680,
+              0 0 50px #90bee680;
+  position: absolute;
+  left: 0;
+  transform: translateX(-50%);
+  animation: logoRotate 2s infinite ease;
+}
+
+@keyframes logoRotate {
+  from {transform: rotate(-360deg)}
+  to {transform: rotate(360deg)}
+}
+
+.app__navbar__content {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.app__navbar__content--icons {
+  font-size: 32px;
+  margin-left: 1rem;
+}

@@ -1,0 +1,9 @@
+.app__contact {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.app__contact p {
+  white-space: nowrap;
+  transform: rotate(90deg);
+}
