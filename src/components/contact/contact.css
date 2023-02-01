@@ -2,14 +2,16 @@
 
   display: flex;
   justify-content: flex-end;
+  align-items: flex-start;
 
+  position: fixed;
+  right: 0;
+  bottom: 20%;
+  padding-right: 1rem;
 }
 
 .app__contact p {
   width: 20px;
   white-space: nowrap;
-  transform: rotate(90deg) translateX(-50%);
-
-  position: absolute;
-  bottom:0;
+  transform: rotate(90deg);
 }

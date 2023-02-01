@@ -7,6 +7,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  z-index: 0;
 }
 
 .app__project--header {
@@ -14,6 +15,9 @@
 }
 
 .app__projects__container {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
+

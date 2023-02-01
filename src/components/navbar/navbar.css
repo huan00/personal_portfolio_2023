@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
 }
 
 .app__navbar__logo {
@@ -48,6 +49,11 @@
   flex: 1;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+}
+
+.app__navbar__content p {
+  margin-left: 1rem;
 }
 
 .app__navbar__content--icons {

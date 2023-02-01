@@ -8,14 +8,27 @@ const Navbar = () => {
     <div className="app__navbar app__padding">
       <div className="app__navbar__logo">
         <div>
-          <h1>Hz</h1>
+          <a href="">
+            <h1>Hz</h1>
+          </a>
         </div>
       </div>
       <div className="app__navbar__content">
-        <p>About</p>
-        <p>Skills</p>
-        <p>Work</p>
-        <RiFolderOpenFill className="app__navbar__content--icons" />
+        <a href="#about">
+          <p>About</p>
+        </a>
+        <a href="#skills">
+          <p>Skills</p>
+        </a>
+        <a href="#projects">
+          <p>Work</p>
+        </a>
+        <a
+          href="https://docs.google.com/document/d/e/2PACX-1vQ3x96xobcMD2EMFKUXY134445aR1aTwN9yOmGh3G_MnI0Ekj7OBGZVttEDKOpKToy-2qQeZw0S5eo1/pub"
+          target="__blank"
+        >
+          <RiFolderOpenFill className="app__navbar__content--icons" />
+        </a>
       </div>
     </div>
   )

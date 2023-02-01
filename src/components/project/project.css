@@ -1,14 +1,15 @@
 .app__project {
   width: 100%;
-  height: 100%;
+  aspect-ratio: 3 / 2;
 
   border-radius: 10px;
-  border: 1px solid white;
   position: relative;
 
 }
 
 .card-front {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,20 +18,53 @@
   left: 50%;
   transform: translate(-50%, -50%);
   transition: opacity .5s ease;
+  background-color: rgba(44, 102, 110, .7);
+  border-radius: 10px;
+}
 
+.card-front h1 {
+  z-index: 1;
+}
+
+.card-front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  opacity: .4;
+  filter: blur(1px);
 }
 
 .card-back {
+  width: 100%;
+  height: 100%;
+  text-align: left;
   padding: 2rem;
+  background-color: rgb(7, 57, 60) ;
   opacity: 0;
   transition: opacity .5s ease;
+  border-radius: 10px;
+  z-index: 2;
+}
 
+.card-back p:last-child {
+  width: fit-content;
+  border: 1px solid var(--color-secondary);
+
+  margin: 1rem auto 0;
+  padding: .5rem 1rem;
+  border-radius: 20px;
+
+  cursor: pointer;
 }
 
 .app__project:hover .card-back {
   opacity: 1;
+  z-index: 2;
+
 }
 
 .app__project:hover .card-front {
   opacity: 0;
+  visibility: hidden;
 }

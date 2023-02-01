@@ -36,6 +36,12 @@ code {
     monospace;
 }
 
+a {
+  text-decoration: none;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
 
 .app__padding {
   padding: 0 2rem;

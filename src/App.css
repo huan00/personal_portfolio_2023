@@ -5,26 +5,26 @@
   grid-template-areas: 
     'navbar navbar navbar navbar'
     'media  main    main  contact'
-    'media  about   about  contact'
-    'media  project   project  contact'
+    '.      about   about      .'
+    '.     project   project   .'
   ;
   justify-content: space-between;
   align-items: center;
   position: relative;
+
+
 }
 
 
 .app__navbar {
   grid-area: navbar;
-
   position: sticky;
   top: 0;
 }
 
 .app__socialMedia {
   grid-area: media;
-  position: fixed;
-  left: 0;
+
 }
 
 .app__home {
@@ -41,6 +41,5 @@
 
 .app__contact {
   grid-area: contact;
-  position: fixed;
-  right: 0;
+  
 }
