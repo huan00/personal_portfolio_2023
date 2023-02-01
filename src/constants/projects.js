@@ -11,7 +11,7 @@ export const projects = [
     imgUrl: devise,
     desc: 'Free lance project, refresh start up letsdevise website. Develope and host',
     tech: ['react', 'CSS'],
-    url: 'letsdevise.co'
+    url: 'https://letsdevise.co'
   },
   {
     name: 'social media',
