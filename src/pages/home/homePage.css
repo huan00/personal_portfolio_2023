@@ -30,7 +30,7 @@
   animation: textGlow 2s infinite ease;
 }
 
-@keyframes textGlow {
+/* @keyframes textGlow {
   0% {
     text-shadow: 0 0 48px #90DDF0;
   }
@@ -43,7 +43,7 @@
   100% {
   text-shadow: 0 0 48px #90DDF0;
 }
-}
+} */
 
 .app__home__container--text p {
   text-align: right;

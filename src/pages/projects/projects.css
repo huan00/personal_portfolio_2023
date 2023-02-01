@@ -1,0 +1,19 @@
+.app__projects {
+  width: 100%;
+  height: 80vh;  
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.app__project--header {
+  text-align: left;
+}
+
+.app__projects__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}

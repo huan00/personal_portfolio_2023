@@ -5,7 +5,7 @@ import Navbar from './components/navbar/Navbar'
 import SocialMedia from './components/socialMedia/SocialMedia'
 import About from './pages/about/About'
 import HomePage from './pages/home/HomePage'
-import Project from './pages/project/Project'
+import Projects from './pages/projects/Projects'
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <SocialMedia />
       <HomePage />
       <About />
-      <Project />
+      <Projects />
       <Contact />
     </div>
   )

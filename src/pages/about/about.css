@@ -1,3 +1,87 @@
 .app__about {
-  grid-area: about;
+  width: 100%;
+  height: 80vh;  
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.app__about__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.app__about--text {
+  flex: 1;
+  text-align: left;
+}
+
+.app__about--text p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.app__about--img {
+  flex: 1;
+
+  position: relative;
+}
+
+.app__about--img-gear {
+  font-size: 72px;
+
+  position: absolute;
+}
+
+.app__about--img-gear:first-child {
+  font-size: 100px;
+  left: 50%;
+  /* transform: translate(-25%, 0) rotate(23deg); */
+  animation: rotateA 10s linear infinite ;
+}
+
+@keyframes rotateA {
+  0% {
+  transform: translate(-65%, 0) rotate(0deg);
+  }
+  100% {
+  transform: translate(-65%, 0) rotate(360deg);
+  }
+}
+
+.app__about--img-gear:nth-child(2){
+  left: 50%;
+  transform: translate(45%) rotate(0deg);
+
+  animation: rotateB 10s linear 00ms infinite  ;
+}
+
+@keyframes rotateB {
+  0% {
+  transform: translate(40%, -5%) rotate(0deg);
+  }
+  100% {
+  transform: translate(40%, -5%) rotate(-360deg);
+  }
+}
+
+.app__about--img-gear:nth-child(3){
+  transform: translate(0%, 80%) rotate(-10deg);
+  animation: rotateC 10s linear 500ms infinite;
+
+}
+
+@keyframes rotateC {
+  0% {
+  transform: translate(10%, 100%) rotate(0);
+  }
+  100% {
+  transform: translate(10%, 100%) rotate(-360deg);
+  }
 }

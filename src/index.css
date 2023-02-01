@@ -40,3 +40,51 @@ code {
 .app__padding {
   padding: 0 2rem;
 }
+
+.headerText {
+  font-size: 32px;
+  width: 100%;
+  color: var(--color-text);
+  text-align: left;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.headerText::before {
+  content: '';
+  display: block;
+  width: 5px;
+  aspect-ratio: 1 / 1;
+  background-color: var(--color-primary);
+  position:absolute;
+  top: 50%;
+  right: -5px;
+  transform: translateY(-1px);
+
+  border-radius: 50%;
+  box-shadow: 0 0 7px rgb(144, 221, 240),
+              0 0 10px rgb(144, 221, 240),
+              0 0 14px rgb(144, 221, 240),
+              0 0 20px rgb(144, 221, 240)
+  ;
+  animation: slider 3s infinite ease;
+  z-index: 1;
+}
+
+@keyframes slider {
+  0% {transform: translateX(0)}
+  50% {transform: translateX(200px)}
+  100% {transform: translateX(0)}
+}
+
+.headerText::after {
+  content: '';
+  width: 200px;
+  height: 2px;
+  display: inline-block;
+  background-color: var(--color-secondary);
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(1px);
+}
