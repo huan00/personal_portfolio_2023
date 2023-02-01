@@ -30,10 +30,10 @@
 
   background-color: var(--color-option);
   border-radius: 50%;
-  box-shadow: 0 0 10px #90ddf080,
-              0 0 20px #90d2e680,
-              0 0 30px #90c8e680,
-              0 0 50px #90bee680;
+  box-shadow: 0 0 10px rgb(144, 221, 240),
+              0 0 20px rgb(154, 230, 230),
+              0 0 30px rgb(164, 240, 220),
+              0 0 50px rgb(174, 250, 210);
   position: absolute;
   left: 0;
   transform: translateX(-50%);
