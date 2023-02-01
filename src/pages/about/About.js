@@ -30,6 +30,8 @@ const About = () => {
               </div>
               <div>
                 <p>MongoDB</p>
+                <p>Postgres</p>
+                <p>Express</p>
               </div>
             </div>
           </div>
