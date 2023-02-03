@@ -2,7 +2,7 @@ import React from 'react'
 
 import './project.css'
 
-const Project = ({ name, desc, imgUrl, url }) => {
+const Project = ({ name, desc, imgUrl, url, tech }) => {
   return (
     <div className="app__project">
       <div className="card-front">
@@ -14,6 +14,14 @@ const Project = ({ name, desc, imgUrl, url }) => {
         <a href={url}>
           <p>visit site</p>
         </a>
+        <div className="card-back-language">
+          <h5>languages</h5>
+          <div>
+            {tech.map((lang) => (
+              <p>&nbsp;{lang} |</p>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   )
