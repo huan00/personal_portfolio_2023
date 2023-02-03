@@ -67,3 +67,23 @@
 .app__home__container--box.second {
   right: 0;
 }
+
+@media screen and (max-width: 500px) {
+
+  .app__home__container--text {
+    width: 100%;
+  }
+
+  .app__home__container--text p {
+    text-align: left;
+  }
+  
+  .app__home__container--box.first {
+    top: 0;
+    width: 100%;
+  }
+  .app__home__container--box.second {
+    bottom: 10%;
+    width: 100%;
+  }
+}

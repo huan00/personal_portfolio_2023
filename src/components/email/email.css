@@ -65,3 +65,14 @@
   outline: none;
   cursor: pointer;
 }
+
+@media screen and (max-width: 500px) {
+.app__email {
+  width: 90%; 
+  top: 40%;
+
+}
+.app__email form {
+  width: 90%;
+}
+}
