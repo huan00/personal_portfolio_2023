@@ -2,7 +2,8 @@ import {
   devise,
   socialMedia,
   fridayLaundry,
-  smartTrading
+  smartTrading,
+  buzzhub
 } from '../assets/images/projects/export'
 
 export const projects = [
@@ -12,6 +13,22 @@ export const projects = [
     desc: 'Free lance project, refresh start up letsdevise website. Develope and host',
     tech: ['react', 'CSS'],
     url: 'https://letsdevise.co'
+  },
+  {
+    name: 'Buzzhub',
+    imgUrl: buzzhub,
+    desc: 'Web application for posting image and have friends comment on the post.',
+    tech: [
+      'react',
+      'MUI',
+      'Drop-zone',
+      'Formik',
+      'Weather-api',
+      'Django',
+      'Rest_framework',
+      'postgresSql'
+    ],
+    url: 'https://buzzhub.netlify.app'
   },
   {
     name: 'social media',
